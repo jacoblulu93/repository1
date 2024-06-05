@@ -26,7 +26,7 @@ function RenderHomePage(){
     // console.log(searchval+' '+name);
     // console.log(name.toUpperCase().includes(searchval.toUpperCase()));
 
-    if(name.toUpperCase().includes(searchval.toUpperCase()) || checkkeywords(product.keywords,searchval)){
+    if(searchval===null||name.toUpperCase().includes(searchval.toUpperCase()) || checkkeywords(product.keywords,searchval)){
     prodhtml += `
       <div class="product-container">
         <div class="product-image-container">
